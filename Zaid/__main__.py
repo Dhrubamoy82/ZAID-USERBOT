@@ -21,7 +21,6 @@ async def start_bot():
             ids.append(ex.id)
         except Exception as e:
             print(f"{e}")
-    os.system("gunicorn app:app")
     await idle()
 
 loop = asyncio.get_event_loop()
